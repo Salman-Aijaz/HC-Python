@@ -101,3 +101,50 @@
 # N,M=map(int, input().split())
 # A = numpy.array([input().split() for _ in range(N)], int)
 # print(numpy.max(numpy.min(A,axis=1),axis=0))
+
+
+# MEAN AND VAR
+# import numpy as np
+
+# n, m = map(int, input().split())
+# list1 = [list(map(int, input().split())) for _ in range(n)]
+
+# arr = np.array(list1)
+# np.set_printoptions(precision=11, suppress=True)  # Set precision to 11 decimal places
+
+# print(np.mean(arr, axis=1))
+# print(np.var(arr, axis=0))
+# print(round(np.std(arr), 11))  # Manually round std to 11 decimal places
+
+# DOT AND CROSS
+# import numpy
+
+# n = int(input())
+# a = numpy.array([input().split() for _ in range(n)], int)
+# b = numpy.array([input().split() for _ in range(n)], int)
+# print(numpy.dot(a,b))
+
+# INNER AND OUTER 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import numpy as np
+# a = np.array(input().split() , int)
+# b = np.array(input().split(), int)
+# print(np.inner(a, b), np.outer(a, b), sep='\n')
+
+
+# LINEAR ALGEBRA 
+# import numpy as np
+
+# np.set_printoptions(legacy='1.13')
+
+# n=int(input())
+
+# my_array=np.array([input().split() for _ in range(n)],float)
+# print(np.linalg.det(my_array))
+
+# POLYNOMINAL 
+# import numpy as np
+
+# poly = [float(x) for x in input().split()]
+# x = float(input())
+# print(np.polyval(poly, x))
